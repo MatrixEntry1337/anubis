@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-router.use(require('./static'));
+router.use(require('./champion'));
+router.use(require('./item'));
 
 /* GET home page. */
 router.get('/', function(req, res) {
